@@ -1,0 +1,232 @@
+@media (max-width:1030px){
+
+    /* slider  */
+    #home .banner1,#home .banner2,#home .banner3,#home .banner4{
+       background-position: center;
+       min-height: 500px;
+    }
+    #home .banner1 .home-banner-text h1{
+       font-size: 100px; 
+       left: 14%;    
+   }
+   #home .banner1 .home-banner-text h6{
+       font-size: 14px;  
+       left: 29%;   
+   }
+    /* welcome to airlines */
+
+   #intro .airplane img{
+       display: none;
+   }
+   #intro p{
+    text-align: justify;
+    font-size: 15px;
+    width: 100%;
+}
+
+   
+   
+   
+}
+   
+   @media (max-width:991px){
+   
+   /* .aircraft-p{
+    display: none;
+   }
+     */
+   }
+   
+   @media (max-width:767px){
+   
+        /* slider */
+        #home .banner1,#home .banner2,#home .banner3,#home .banner4{
+           background-position: center;
+           min-height: 400px;
+        }
+        #home .banner1 .home-banner-text h1{
+           font-size: 80px; 
+           left: 12%;    
+           letter-spacing: 35px;
+           top: 13%;
+       }
+       #home .banner1 .home-banner-text h6{
+           font-size: 11px;  
+           left: 24%;
+           top: 11%;   
+       }
+       
+   }
+   
+   
+   @media (max-width:430px){
+       .navbar-brand img{
+           width: 100px;
+       }
+       /* slider */
+       #home .banner1,#home .banner2,#home .banner3,#home .banner4{
+           background-position: center;
+           min-height: 250px;
+        }
+        #home .banner1 .home-banner-text h1{
+           font-size: 40px; 
+           left: 18%;    
+           letter-spacing: 15px;
+           top: 16%;
+       }
+       #home .banner1 .home-banner-text h6{
+           font-size: 8px;  
+           left: 27%;
+           top: 13%;   
+           letter-spacing: 5px;
+       }
+       /* ticket */
+       .ticket{
+        background-color: var(--gray-color);
+        font-size: 15px;
+        position: relative;
+        left: 0%;
+       }
+       input::placeholder{
+        font-size: 15px;
+       }
+       /* welcome to airlines */
+
+       #intro h1{
+        font-weight: 700;
+        font-size: 23px;
+        margin-top: 2%;
+       }
+       #intro p{
+        text-align: justify;
+        width: 88%;
+        font-size: 12px;
+       }
+       #intro button{
+           background-color: var(--primary-color);
+           border: none;
+           color: white;
+           padding: 5px;
+           font-size: 10px;
+           font-family: poppins;
+           font-weight: 500;
+       }
+
+      /* aircraft */
+
+      #aircraft h1,#aircharter h1, #why-us h1,#aircraft-type h1{
+        font-weight: 700;
+        font-size: 23px;
+        margin-top: 5%;
+        font-family: poppins;
+        text-align: center;
+    }
+      #aircraft p,#aircharter p, #why-us p{
+        
+        font-size: 10px;
+        font-family: poppins;
+        text-align: center;
+    }
+    
+    #script h2{
+        color: var(--primary-color);
+        font-weight: 700;
+        font-family: poppins;
+        font-size: 19px;
+    }
+    #script p{
+        text-align: justify;
+    }
+    #script a{
+        font-size: 12px;
+        margin-left: 84%;
+        color: var(--primary-color);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #vdo video{
+        margin-top: 6%;
+        margin-left: 3%;
+        height: 200px;
+    }
+    /* counter */
+    #counter h1{
+        font-size: 15px;
+    }
+    #counter p{
+        font-size: 10px;
+    }
+    /* footer */
+    footer #link1{
+        margin-left: 10%;
+    }
+    /* contact */
+    #contact{
+        margin-top: 22%;
+    }
+    #contact h1{
+        font-weight: 700;
+        font-size: 23px;
+        font-family: poppins;
+        text-align: center;
+    }
+    #contact p{
+        
+        font-size: 12px;
+        font-family: poppins;
+        text-align: center;
+    }
+    #address ul li{
+        text-decoration: none;
+        list-style-type: none;
+        font-family: poppins;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* homepage */
+    #home1{
+        margin-top: 20%;
+    }
+    /* piston */
+    #aircraft-type{
+        margin-top: 22%;
+    }
+    /* more info */
+    #piston-1{
+        margin-top: 22%;
+        font-family: poppins;
+    }
+    /* safety */
+    #safety{
+        margin-top: 20%;
+     }
+   }    
+   
+   
+   @media (max-width:375px){
+       .navbar-brand img{
+           width: 100px;
+       }
+       /* slider */
+       #home .banner1,#home .banner2,#home .banner3,#home .banner4{
+           background-position: center;
+           min-height: 250px;
+        }
+        #home .banner1 .home-banner-text h1{
+           font-size: 30px; 
+           left: 18%;    
+           letter-spacing: 15px;
+           top: 19%;
+       }
+       #home .banner1 .home-banner-text h6{
+           font-size: 7px;  
+           left: 24%;
+           top: 15%;   
+           letter-spacing: 5px;
+       }
+
+       
+   }    
+   
+   
