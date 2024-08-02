@@ -1,82 +1,94 @@
-
-:root{
-    --primary-color:rgb(58, 100, 159);
-    --secondary-color:white;
-    --text-black:black;
-    --dark-color:rgb(152,151,151);
-    --gray-color:rgb(239,239,239);
-    --light-color:rgb(83, 142, 211);
-    --primary-font:poppins;
-    --secondary-font:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
-
+:root {
+  --primary-color: rgb(58, 100, 159);
+  --secondary-color: white;
+  --text-black: black;
+  --dark-color: rgb(152, 151, 151);
+  --gray-color: rgb(239, 239, 239);
+  --light-color: rgb(83, 142, 211);
+  --secondary-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+* {
+  font-family: "poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
 }
 /* main headings */
 
-#aircraft h1,#aircharter h1,#why-us h1,#aircraft-type h1{
-    font-weight: 700;
-    font-size: 33px;
-    font-family: poppins;
-    text-align: center;
+#aircraft h1,
+#aircharter h1,
+#why-us .heading h1,
+#aircraft-type h1,
+#our-team h1 {
+  font-weight: 700;
+  font-size: 33px;
+  text-align: center;
 }
-#aircraft p,#aircharter p,#why-us p{
-    
-    font-size: 15px;
-    font-family: poppins;
-    text-align: center;
+#aircraft p,
+#aircharter p,
+#why-us .heading p,
+#our-team p {
+  font-size: 15px;
+  text-align: center;
 }
 
 /* NAVBAR */
-#nav
-{
-    background-color: var(--primary-color);
-    position: fixed;
+#nav {
+  background-color: var(--primary-color);
+  position: fixed;
 }
-.navbar-brand img{
-    width: 150px;
+.navbar-brand img {
+  width: 150px;
 }
-#toggle,#close{
-    border: none;
-    font-size: 18px;
-    box-shadow: none;
+#toggle,
+#close {
+  border: none;
+  font-size: 18px;
+  box-shadow: none;
 }
-.offcanvas-body,.offcanvas-header{
-    background-color:var(--primary-color);
+.offcanvas-body,
+.offcanvas-header {
+  background-color: var(--primary-color);
+}
+#Login {
+  background-color: var(--gray-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 15px;
 }
 /* dropdown */
-.nav-item .dropdown-menu,.nav-item .dropdown-menu{
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    border: none;
-    margin-left: 5%;
-    
+.nav-item .dropdown-menu,
+.nav-item .dropdown-menu {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  margin-left: 5%;
 }
-.nav-item .dropdown-menu a{
-    color: var(--secondary-color);
-    text-decoration: none;
-    padding: 10px 17px;
+.nav-item .dropdown-menu a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px 17px;
 }
-.nav-item .dropdown-menu a:hover{
-    color: var(--light-color);
+.nav-item .dropdown-menu a:hover {
+  color: var(--light-color);
 }
 /* hover underline */
-#link
-{
-    font-weight: 400;
-    position: relative;
-    color: var(--secondary-color);
-    padding: 7px 10px;
-    font-size: 15px;
-    font-family: var(--primary-font);
+#link {
+  font-weight: 400;
+  position: relative;
+  color: var(--secondary-color);
+  padding: 7px 10px;
+  font-size: 15px;
+  font-family: var(--primary-font);
 }
-@media (min-width:992px)
-{
-#link::before{
+@media (min-width: 992px) {
+  #link::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -87,388 +99,422 @@ body{
     background-color: var(--secondary-color);
     visibility: hidden;
     transition: 0.2s ease-in-out;
-}
-#link:hover::before,#link.active::before{
+  }
+  #link:hover::before,
+  #link.active::before {
     width: 100%;
     visibility: visible;
-    
-}
+  }
 }
 
 /* slider */
-#home .banner1{
-    
-    background-image: url(images/slider1.jpeg);
-    background-size: cover;
-    background-position: center;
-    min-height: 600px;
-    position: relative;
+#home .banner1 {
+  background-image: url(images/slider1.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
 }
-#home .banner2{
-    background: linear-gradient(rgb(58, 100, 159),rgba(255, 255, 255, 0)),url(images/slider2.jpg)no-repeat;
-    background-size: cover;
-     background-position: center;
-     min-height: 600px;
-     position: relative;
+#home .banner2 {
+  background: linear-gradient(rgb(58, 100, 159), rgba(255, 255, 255, 0)),
+    url(images/slider2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
 }
-#home .banner3{
-    background: linear-gradient(rgba(58, 100, 159),rgba(255, 255, 255, 0)),url(images/slider3.jpg)no-repeat;
-    background-size: cover;
-     background-position: center;
-     min-height: 600px;
-     position: relative;
+#home .banner3 {
+  background: linear-gradient(rgba(58, 100, 159), rgba(255, 255, 255, 0)),
+    url(images/slider3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
 }
-#home .banner4{
-    background: linear-gradient(rgba(58, 100, 159),rgba(255, 255, 255, 0)),url(images/slider4.jpg)no-repeat;
-    background-size: cover;
-     background-position: center;
-     min-height: 600px;
-     position: relative;
+#home .banner4 {
+  background: linear-gradient(rgba(58, 100, 159), rgba(255, 255, 255, 0)),
+    url(images/slider4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
 }
-#home .banner1 .home-banner-text h1{
-    position: absolute;
-    background: linear-gradient(rgba(13, 16, 107, 0.623),rgba(255, 255, 255, 0.349));
-    background-clip: text;
-    color: transparent;
-    top: 12%;
-    left: 19%;
-    font-family: roboto;
-    font-weight: 700;
-    font-size: 120px;
-    letter-spacing: 45px;
+#home .banner1 .home-banner-text {
+  text-align: center;
+  position: absolute;
+  top: 7%;
 }
-#home .banner1 .home-banner-text h6{
-    position: absolute;
-    top: 10%;
-    left: 31%;
-    font-family: roboto;
-    letter-spacing: 13px;
-    font-weight: bold;
+#home .banner1 .home-banner-text img {
+  margin-top: 2%;
 }
+
 /* ticket */
 
-.ticket{
-    background-color: var(--gray-color);
-    font-size: 18px;
-
+.ticket {
+  background-color: var(--gray-color);
+  font-size: 18px;
 }
-.btn-search{
-    background-color: var(--primary-color);
-    border: none;
+.btn-search {
+  background-color: var(--primary-color);
+  border: none;
 }
-.btn-search:hover{
-    background-color: var(--light-color);
+.btn-search:hover {
+  background-color: var(--light-color);
 }
-input:hover{
-    border: solid 1px rgb(18, 100, 167);
+input:hover {
+  border: solid 1px rgb(18, 100, 167);
 }
 
 /* welcome to airlines */
 
-#intro{
-    margin-top: 5%;
-    margin-left: 7%;
-    
-   
+#intro {
+  margin-top: 5%;
+  margin-left: 7%;
 }
-#intro h1{
-    font-weight: 700;
-    font-size: 33px;
-    font-family: poppins;
+#intro h1 {
+  font-weight: 700;
+  font-size: 33px;
 }
-#intro p{
-    text-align: justify;
-    font-size: 15px;
-    width: 85%;
-    font-family: poppins;
+#intro p {
+  text-align: justify;
+  font-size: 15px;
+  width: 85%;
 }
-#intro img{
-    margin-top: 1%;
-    width: 520px;
+#intro img {
+  margin-top: 1%;
+  width: 520px;
 }
-#intro button{
-    background-color: var(--primary-color);
-    border: none;
-    color: white;
-    padding: 10px;
-    font-family: poppins;
-    font-weight: 600;
+#intro button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
 }
-#intro button:hover{
-    background-color: var(--light-color);
+#intro button:hover {
+  background-color: var(--light-color);
 }
 
 /* aircraft */
-#our-craft{
-    background-color: var(--gray-color);
-    width: 100%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-top: 5%;
+#our-craft {
+  background-color: var(--gray-color);
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-#aircraft .card{
-    background-color: var(--dark-color);
-    margin-top: 5%;
-    border-radius: 0px;
-    border: none;
+#aircraft .card {
+  background-color: var(--dark-color);
+  margin-top: 5%;
+  border-radius: 0px;
+  border: none;
+  transition: all 0.5s;
 }
-#aircraft .card img{
-    height: 200px;
+#aircraft .card img {
+  height: 200px;
 }
-#aircraft .card a{
-    text-decoration: none;
+#aircraft .card a {
+  text-decoration: none;
 }
-#aircraft .card h2{
-    text-align: center;
-    font-size: 22px;
-    color: var(--secondary-color);
-    font-weight: 600;
+#aircraft .card h2 {
+  text-align: center;
+  font-size: 22px;
+  color: var(--secondary-color);
+  font-weight: 600;
 }
-#aircraft .card:hover{
-    box-shadow: 1px 1px 6px 6px rgb(179, 179, 179);
+#aircraft .card:hover {
+  box-shadow: 1px 1px 6px 6px rgb(179, 179, 179);
 }
-#aircraft .card-body:hover{
-    background-color: var(--primary-color);
+#aircraft .card-body:hover {
+  background-color: var(--primary-color);
 }
 
 /* aircharter */
 
-#our-charter{
-    margin-top: 5%;
+#our-charter {
+  margin-top: 5%;
 }
-#our-charter #aircharter .chart1{
-    margin-top: 5%;
+#our-charter #aircharter .chart1 {
+  margin-top: 5%;
 }
-#script{
-    background-color: var(--gray-color);
-    padding: 40px;
+#script {
+  background-color: var(--gray-color);
+  padding: 40px;
 }
-#script h2{
-    color: var(--primary-color);
-    font-weight: 700;
-    font-family: poppins;
+#script h2 {
+  color: var(--primary-color);
+  font-weight: 700;
 }
-#script p{
-    
-    text-align: justify;
+#script p {
+  text-align: justify;
 }
-#script a{
-    margin-left: 84%;
-    color: var(--primary-color);
-    font-weight: bold;
-    text-decoration: none;
+#script a {
+  margin-left: 68%;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
 }
-#script a:hover{
-    color: var(--text-black);
+#script a:hover {
+  color: var(--text-black);
 }
-#aircharter .chart1{
-    margin-top: 3%;
+#aircharter .chart1 {
+  margin-top: 3%;
 }
-#charter-img:hover{
-    filter: opacity(80%);
+#charter-img:hover {
+  filter: opacity(80%);
 }
 
 /* video */
-#vdo{
-    display: flex;
-    justify-content: center;
+#vdo {
+  display: flex;
+  justify-content: center;
 }
-#vdo video{
-    margin-top: 6%;
-  
+#vdo video {
+  margin-top: 6%;
 }
 /* count */
-#counter{
-    text-align: center;
-    margin-top: 2%;
-    font-family: poppins;
+#counter {
+  text-align: center;
+  margin-top: 2%;
 }
-#counter h1{
-    font-weight: 700;
-    color: rgb(134, 134, 134);
+#counter h1 {
+  font-weight: 700;
+  color: var(--primary-color);
 }
-#counter p{
-    font-weight: 600;
-    font-size: 18px;
+#counter p {
+  font-weight: 600;
+  font-size: 18px;
 }
 /* footer */
 
-footer{
-    margin-top: 5%;
-    background-color: var(--primary-color);
-    padding: 20px;
+footer {
+  margin-top: 5%;
+  background-color: var(--primary-color);
+  padding: 20px;
 }
-#footer-p1{
-    width: 45%;
-    text-align: left;
-    color: var(--secondary-color);
-    margin-top: 5%;
+#footer-p1 {
+  width: 45%;
+  text-align: left;
+  color: var(--secondary-color);
+  margin-top: 5%;
 }
-footer a{
-    color: white;
-    padding: 0px 4px;
+footer a {
+  color: white;
+  padding: 0px 4px;
 }
-#links{
-    margin-top: 2%;
+#links {
+  margin-top: 2%;
 }
-#links ul li{
-    text-decoration: none;
-    list-style-type: none;
-    padding: 10px 0px;
-    color: white;
-    font-family: var(--primary-font);
+#links ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px 0px;
+  color: white;
+  font-family: var(--primary-font);
 }
-#links ul li a{
-    text-decoration: none;
-    list-style-type: none;
+#links ul li a {
+  text-decoration: none;
+  list-style-type: none;
 }
-#links ul li a:hover{
-   color: var(--text-black);
+#links ul li a:hover {
+  color: var(--text-black);
 }
-#copyright{
-    background-color: var(--dark-color);
-    text-align: center;
-    color: var(--text-black);
-    padding: 5px;
-    
+#copyright {
+  background-color: rgb(158, 158, 158);
+  text-align: center;
+  color: var(--text-black);
+  padding: 5px;
 }
-
 
 /* CONTACT WITH US */
 
-#contact{
-    margin-top: 10%;
+#contact {
+  margin-top: 10%;
 }
-#address{
-    background-color: var(--gray-color);
-    padding: 20px;
-    margin-top: 5%;
-    /* margin-left: 3%; */
+#address {
+  background-color: var(--gray-color);
+  padding: 20px;
+  margin-top: 5%;
+  /* margin-left: 3%; */
 }
-#address ul li{
-    text-decoration: none;
-    list-style-type: none;
-    font-family: poppins;
-    font-size: 18px;
-    padding: 10px;
+#address ul li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 18px;
+  padding: 10px;
 }
-#contact h1{
-    font-weight: 700;
-    font-size: 33px;
-    font-family: poppins;
-    text-align: center;
+#contact h1 {
+  font-weight: 700;
+  font-size: 33px;
+  text-align: center;
 }
-#contact p{
-    
-    font-size: 15px;
-    font-family: poppins;
-    text-align: center;
+#contact p {
+  font-size: 15px;
+  text-align: center;
 }
-#form{
-    background-color: rgb(94, 94, 94);
-    padding: 5%;
-    margin-top: 5%;
+#form {
+  background-color: rgb(94, 94, 94);
+  padding: 5%;
+  margin-top: 5%;
 }
-#map{
-    margin-top: 5%;
+#map {
+  margin-top: 5%;
 }
 
 /* Home page */
 
-#home1{
-    margin-top: 12%;
+#home1 {
+  margin-top: 12%;
 }
-#why-us{
-    margin-top: 6%;
-}
-#why-us .container{
-    text-align: center;
-    font-family: poppins;
-}
-#why-us img:hover{
-    transform: scale(1.1);
+#why-us {
+  margin-top: 6%;
 }
 
 /* Piston */
 
-#aircraft-type{
-    margin-top: 9%;
+#aircraft-type {
+  margin-top: 9%;
 }
-#aircraft-type .card{
-    background-color: rgb(217, 217, 217);
-    border: none;
-    border-radius: 0;
-    margin-top: 7%;
+#aircraft-type .card {
+  background-color: rgb(217, 217, 217);
+  border: none;
+  border-radius: 0;
+  margin-top: 7%;
 }
-#aircraft-type .card h3{
-    color: var(--primary-color);
-    font-family: poppins;
+#aircraft-type .card h3 {
+  color: var(--primary-color);
 }
-#aircraft-type .card-body{
-    padding: 30px;
+#aircraft-type .card-body {
+  padding: 30px;
 }
-#aircraft-type .card button{
-    background-color: rgb(120,120,120);
-    border: none;
-    padding: 8px;
-    color: white;
-    font-family: poppins;
-    font-size: 13px;
+#aircraft-type .card button {
+  background-color: rgb(120, 120, 120);
+  border: none;
+  padding: 8px;
+  color: white;
+  font-size: 13px;
 }
-#aircraft-type .card button:hover{
-    background-color: rgb(165, 162, 162);
+#aircraft-type .card button:hover {
+  background-color: rgb(165, 162, 162);
 }
 
 /* piston */
 
-#more-aircraft{
-    text-align: center;
-    font-family: poppins;
-    margin-top: 4%;
+#more-aircraft {
+  text-align: center;
+  margin-top: 4%;
 }
-#more-aircraft .type1 .card{
-    background-color: var(--primary-color);
-    padding: 8px;
-    margin-top: 10%;
-    border: none;
-    border-radius: 0px;
-    font-size: 18px;
+#more-aircraft .type1 .card {
+  background-color: var(--primary-color);
+  padding: 8px;
+  margin-top: 10%;
+  border: none;
+  border-radius: 0px;
+  font-size: 18px;
 }
-#more-aircraft .type2 .card{
-    background-color: rgb(120,120,120);
-    padding: 8px;
-    margin-top: 10%;
-    border: none;
-    border-radius: 0px;
-    font-size: 18px;
+#more-aircraft .type2 .card {
+  background-color: rgb(120, 120, 120);
+  padding: 8px;
+  margin-top: 10%;
+  border: none;
+  border-radius: 0px;
+  font-size: 18px;
 }
-#more-aircraft .type2 .card:hover{
-    background-color: rgb(165, 162, 162)
+#more-aircraft .type2 .card:hover {
+  background-color: rgb(165, 162, 162);
 }
-#more-aircraft .type1 a,.type2 a{
-    text-decoration: none;
-    color: var(--secondary-color);
+#more-aircraft .type1 a,
+.type2 a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 /* more info */
 
-#piston-1{
-    margin-top: 10%;
-    font-family: poppins;
+#piston-1 {
+  margin-top: 10%;
 }
-#piston-1 h2{
-    color: var(--primary-color);
-    margin-left: 4%;
+#piston-1 h2 {
+  color: var(--primary-color);
+  margin-left: 4%;
 }
-#piston-1 img{
-    margin-top: 6%;
+#piston-1 img {
+  margin-top: 6%;
 }
 
 /* safety */
 
-#safety{
-   margin-top: 7%;
+#safety {
+  margin-top: 7%;
 }
-#safety h3{
-    color: var(--primary-color);
+#safety h3 {
+  color: var(--primary-color);
+}
+
+/* private aircharter */
+#charter1 {
+  margin-top: 10%;
+}
+#charter1 h2 {
+  color: var(--primary-color);
+}
+
+/* why us */
+#why-us #why-us1 h1 {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+#why-us #why-us1 h4 {
+  font-size: 22px;
+}
+#why-us #why-us1 p {
+  font-size: 15px;
+}
+#why-us .card {
+  margin-top: 5%;
+}
+#why-us .card:hover{
+  background-image: url(images/alessio-soggetti-cfKC0UOZHJo-unsplash.jpg);
+  background-size: cover;
+}
+
+
+/* our team */
+#our-team {
+  margin-top: 5%;
+}
+#our-team .card {
+  border: none;
+  text-align: center;
+}
+#our-team h4 {
+  color: var(--primary-color);
+}
+#our-team img {
+  border-radius: 50%;
+}
+/* indicators color */
+#our-team .carousel-indicators [data-bs-target]{
+  background-color: var(--primary-color);
+}
+#our-team .slider-icon{
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: 600;
+}
+.pic {
+  position: absolute;
+  top: 272%;
+  left: -10%;
+  animation: run 3s linear infinite;
+}
+@keyframes run {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1400px);
+  }
+}
+
+#our-team img {
+  transition: all 0.5s;
+}
+#our-team img:hover {
+  transform: translateY(-15px);
 }
